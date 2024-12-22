@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale">
+        <title>Average Marks</title>
+    </head>
+    <body>
+    <center>
+        <h2><u>Student Marks</u></h2>
+        <table border=2>
+            <tr>
+                <th>Student Name</th>
+                <th><i>Average marks</i></th>
+            </tr>
+            {% for key, value in result.items()%}
+            <tr>
+                <td>{{key}}</td>
+                <td>{{value}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+    </body>
+</html>

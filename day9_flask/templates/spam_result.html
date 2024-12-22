@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>
+            Spam Detector Result
+        </title>
+    </head>
+    <body>
+        <h1><u>Spam Detection Result</h1></u>
+        <p>The given text is: {{data['message']}}</p>
+        {% if data['result']=='ham'}
+            <h3 color="blue">This message is NOT a spam message</h3>
+        {% else %}
+            <h3 color="red">This message is a SPAM message</h3>
+        {% endif %}
+    </body>
+</html>
